@@ -2,7 +2,7 @@
 PWA using Nodejs and Docker
 
 #To create new docker image
-douker build -t<imagename>:<version> imagefilepath
+docker build -t<imagename>:<version> imagefilepath
 
 #To create container
 docker run -it <imagename>:<version>

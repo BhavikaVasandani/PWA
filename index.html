@@ -1,0 +1,117 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TO DO</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="css/materialize.min.css" rel="stylesheet">
+
+  <link type="text/css" href="css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffe1c4">
+</head>
+<body class="grey lighten-4">
+
+  <!-- top nav -->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">
+      <a href="/">TO<span>DO</span></a>
+      <span class="right grey-text text-darken-1">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+    </div>
+  </nav>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    
+  
+
+
+  <!-- side nav -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">HELLO WORLD</a></li>
+    <li><a href="/" class="waves-effect">Home</a></li>
+    <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="/pages/contact.html" class="waves-effect">
+      <i class="material-icons">mail_outline</i>Contact</a>
+    </li>
+  </ul>
+
+  <!-- recipes -->
+  <div class="recipes container grey-text text-darken-1">
+    <div class="card-panel recipe white row">
+      <img src="Images/background1.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Assignment Work</div>
+        <div class="recipe-ingredients">day after Tomorrow</div>
+      </div>
+      <div class="recipe-delete">
+        DEL
+      </div>
+    </div>
+    <div class="card-panel recipe white row">
+      <img src="Images/background2.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Complete Project</div>
+        <div class="recipe-ingredients">By the end of this month</div>
+      </div>
+      <div class="recipe-delete">
+        DEL
+      </div>
+    </div>
+    <div class="card-panel recipe white row">
+      <img src="Images/background3.jpg" alt="recipe thumb">
+      <div class="recipe-details">
+        <div class="recipe-title">Meet maam</div>
+        <div class="recipe-ingredients">By this week</div>
+      </div>
+      <div class="recipe-delete">
+        DEL
+      </div>
+    </div>
+  
+
+  <div class="center">
+    <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+
+  <!-- add recipe side nav -->
+  <div id="side-form" class="sidenav side-form">
+    <form class="add-recipe container section">
+      <h6 >New Recipe</h6>
+      <div class="divider"></div>
+      <div class="input-field">
+        <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
+        <label for="title">Add task</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
+        <label for="ingredients">About Task</label>
+      </div>
+      <div class="input-field center">
+        <button class="btn-small">Add</button>
+      </div>
+    </form>
+  </div>
+
+<script src="sw.js"></script>
+<script src="app.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
